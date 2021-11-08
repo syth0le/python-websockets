@@ -13,5 +13,6 @@ async def hello():
         print(f'< {greeting}')
 
 
-while True:
-    asyncio.get_event_loop().run_until_complete(hello())
+if __name__ == '__main__':
+    while True:
+        asyncio.get_event_loop().run_until_complete(hello())

@@ -13,5 +13,6 @@ async def type_time(websocket, path):
 
 start_server = websockets.serve(type_time, '127.0.0.1', 5678)
 
-asyncio.get_event_loop().run_until_complete(start_server)
-asyncio.get_event_loop().run_forever()
+if __name__ == '__main__':
+    asyncio.get_event_loop().run_until_complete(start_server)
+    asyncio.get_event_loop().run_forever()
